@@ -22,15 +22,31 @@
 // Студент отримує сертифікат тільки при повному проходженні курсу.
 // Повідомити студента про можливість отримати сертифікат або вказати, скільки відсотків залишилося до завершення. Звертатися на ім'я.
 
-const Name = (prompt("Type student`s name: "));
-const surname = (prompt("Type student`s surname: "));
-const specialisation = (prompt("Type student`s Specialisation: "));
-const year = (prompt("Type student`s year: "));
-const averageScore = (prompt("Type student`s Average score: "));
+const Name = prompt("Type student`s name");
+const surname = prompt("Type student`s surname");
+const specialisation = prompt("Type student`s Specialisation");
+const year = Number(prompt("Type student`s year"));
+const averageScore = Number(prompt("Type student`s Average score"));
 
 console.group("===== Student`s profile =====");
-console.log("Name, Surname: ", Name, surname);
-console.log('specialisation: ', specialisation );
-console.log('Year: ', year);
-console.log('averageScore: ', averageScore)
+console.log(typeof Name && typeof surname, "Name, Surname: ", Name, surname);
+console.log(typeof specialisation, "specialisation: ", specialisation);
+console.log(typeof year, "Year: ", year);
+console.log(typeof averageScore, "averageScore: ", averageScore);
 console.groupEnd();
+
+const isMentor =  Number(prompt("Are you mentor?(Yes - 1, No - 0)" ));
+const isStudent = Number(prompt("Are you Student?(Yes - 1, No - 0)"));
+const hasPaid =   Number(prompt("Did you paid?(Yes - 1, No - 0)"   ));
+
+if ((isMentor === 0 && isStudent === 1 && hasPaid === 1) || isMentor === 1) {
+  console.log("Congratulation! You have accesed to course!");
+} else if (isMentor === 0 && isStudent === 1 && hasPaid === 0) {
+  console.log("You must pay to be accesed to course");
+} else if (isMentor === 0 && isStudent === 0 && hasPaid === 1) {
+  console.log("You are not a student");
+} else if (isMentor === 0 && isStudent === 0 && hasPaid === 0) {
+  console.log("Access denied");
+} else {
+  console.log("Access denied");
+}
