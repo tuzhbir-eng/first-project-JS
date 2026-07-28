@@ -29,7 +29,7 @@ const year = Number(prompt("Type student`s year"));
 const averageScore = Number(prompt("Type student`s Average score"));
 
 console.group("===== Student`s profile =====");
-console.log(typeof Name && typeof surname, "Name, Surname: ", Name, surname);
+console.log(typeof Name, typeof surname, "Name, Surname: ", Name, surname);
 console.log(typeof specialisation, "specialisation: ", specialisation);
 console.log(typeof year, "Year: ", year);
 console.log(typeof averageScore, "averageScore: ", averageScore);
