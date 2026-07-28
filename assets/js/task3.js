@@ -28,8 +28,10 @@
 let order = 0;
 let price = 0;
 
-const menu = alert("MENU: 1 - tea(50 грн), 2 - coffee(70 грн), 3 - juice(60 грн), 4 - water(30 грн");
-const drink = +(prompt("Choose your drink(tea, coffee, juice, water)"));
+const menu = alert(
+  "MENU: 1 - tea(50 грн), 2 - coffee(70 грн), 3 - juice(60 грн), 4 - water(30 грн)",
+);
+const drink = +prompt("Choose your drink(tea, coffee, juice, water)");
 
 switch (drink) {
   case 1:
@@ -38,7 +40,7 @@ switch (drink) {
     console.group("===== Order =====");
     console.log("Drink: ", order);
     console.log("Price: ", price, "грн");
-    console.groupEnd;
+    console.groupEnd();
     break;
 
   case 2:
@@ -47,7 +49,7 @@ switch (drink) {
     console.group("===== Order =====");
     console.log("Drink: ", order);
     console.log("Price: ", price, "грн");
-    console.groupEnd;
+    console.groupEnd();
     break;
   case 3:
     order = "Juice";
@@ -55,7 +57,7 @@ switch (drink) {
     console.group("===== Order =====");
     console.log("Drink: ", order);
     console.log("Price: ", price, "грн");
-    console.groupEnd;
+    console.groupEnd();
     break;
   case 4:
     order = "Water";
@@ -63,7 +65,7 @@ switch (drink) {
     console.group("===== Order =====");
     console.log("Drink: ", order);
     console.log("Price: ", price, "грн");
-    console.groupEnd;
+    console.groupEnd(); 
     break;
   default:
     console.log("Please, choose one of the following");
