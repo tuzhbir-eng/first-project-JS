@@ -37,36 +37,26 @@ switch (drink) {
   case 1:
     order = "Tea";
     price = 50;
-    console.group("===== Order =====");
-    console.log("Drink: ", order);
-    console.log("Price: ", price, "грн");
-    console.groupEnd();
     break;
 
   case 2:
     order = "Coffee";
     price = 70;
-    console.group("===== Order =====");
-    console.log("Drink: ", order);
-    console.log("Price: ", price, "грн");
-    console.groupEnd();
     break;
+
   case 3:
     order = "Juice";
     price = 60;
-    console.group("===== Order =====");
-    console.log("Drink: ", order);
-    console.log("Price: ", price, "грн");
-    console.groupEnd();
     break;
+
   case 4:
     order = "Water";
     price = 30;
-    console.group("===== Order =====");
-    console.log("Drink: ", order);
-    console.log("Price: ", price, "грн");
-    console.groupEnd(); 
     break;
   default:
     console.log("Please, choose one of the following");
 }
+console.group("===== Order =====");
+console.log("Drink: ", order);
+console.log("Price: ", price, "грн");
+console.groupEnd();
