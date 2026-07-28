@@ -29,7 +29,7 @@ let order = 0;
 let price = 0;
 
 const menu = alert("MENU: 1 - tea(50 грн), 2 - coffee(70 грн), 3 - juice(60 грн), 4 - water(30 грн");
-const drink = Number(prompt("Choose your drink(tea, coffee, juice, water)"));
+const drink = +(prompt("Choose your drink(tea, coffee, juice, water)"));
 
 switch (drink) {
   case 1:

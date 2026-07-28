@@ -27,7 +27,7 @@ if (productPrice && productCount !== 0) {
   totalPrice = productPrice * productCount;
 }
 
-if (totalPrice >= 500 && totalPrice <= 800) {
+if (totalPrice >= 500 && totalPrice < 800) {
   priceWithDiscount = totalPrice * 0.97;
   console.group("Your Total Price");
   console.log("Your price with discount: ", priceWithDiscount);
